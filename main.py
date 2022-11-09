@@ -61,7 +61,7 @@ with open(file_paths) as file:
             for symbol in line:
                 if not symbol.isdigit():
                     custom_line += symbol
-                    custom_line = re.sub(' +', ' ', custom_line)
+        custom_line = re.sub(' +', ' ', custom_line)
         writer.write(custom_line)
     writer.close()
 file.close()
